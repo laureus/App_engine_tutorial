@@ -20,6 +20,12 @@ public class GuestbookServlet extends HttpServlet {
 				ex.printStackTrace();
 			}
 			
+		}else{
+			try{
+				req.getRequestDispatcher("/jsp" + userPath).forward(req, resp);
+			}catch(Exception ex){
+				ex.printStackTrace();
+			}
 		}
 		/*UserService userService = UserServiceFactory.getUserService();
 		User user = userService.getCurrentUser();

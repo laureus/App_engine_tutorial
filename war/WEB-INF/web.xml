@@ -23,6 +23,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet-mapping>
 		<servlet-name>guestbook</servlet-name>
 		<url-pattern>/guestbook</url-pattern>
+		<url-pattern>/guestbook.jsp</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>sign</servlet-name>
