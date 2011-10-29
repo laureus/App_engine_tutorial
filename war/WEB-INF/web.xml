@@ -12,6 +12,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>guestbook</servlet-name>
 		<servlet-class>com.tutorial.appengine.GuestbookServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>sign</servlet-name>
+		<servlet-class>com.tutorial.appengine.SignGuestbookServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>HeyAppEngine</servlet-name>
 		<url-pattern>/heyappengine</url-pattern>
@@ -19,6 +23,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet-mapping>
 		<servlet-name>guestbook</servlet-name>
 		<url-pattern>/guestbook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sign</servlet-name>
+		<url-pattern>/sign</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
